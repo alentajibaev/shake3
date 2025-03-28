@@ -10,8 +10,8 @@ let subscriptions = [];
 
 webpush.setVapidDetails(
   'mailto:test@example.com',
-  '<YOUR_PUBLIC_VAPID_KEY>',
-  '<YOUR_PRIVATE_VAPID_KEY>'
+  process.env.VAPID_PUBLIC_KEY,
+  process.env.VAPID_PRIVATE_KEY
 );
 
 app.use(bodyParser.json());
