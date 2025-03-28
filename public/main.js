@@ -5,7 +5,7 @@ if ('serviceWorker' in navigator) {
     const registration = await navigator.serviceWorker.ready;
     const subscription = await registration.pushManager.subscribe({
       userVisibleOnly: true,
-      applicationServerKey: 'ВАШ_ПУБЛИЧНЫЙ_КЛЮЧ_ВСТАВИТЬ_СЮДА_ЖЕСТКО'
+      applicationServerKey: 'BB0OfXGeWnzOvq31GMoezlBd3EJ3ZocQlAv3imb1-bbrDwr467lRGCmV9UKr1ZIDTOKrMeXeWziIhNKt8Auee0w'
     });
 
     await fetch('/subscribe', {
